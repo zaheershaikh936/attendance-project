@@ -1,7 +1,8 @@
 {
-  "name": "attendance-workforce-mgmt",
+  "name": "attendies",
   "version": "0.1.0",
   "private": true,
+  "description": "Attendies - Global Multi-Tenant Workforce Management SaaS",
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -15,7 +16,6 @@
     "react-dom": "^19.0.0",
     "supabase": "^2.0.0",
     "lucide-react": "^0.400.0",
-    "class-variance-aware": "^0.7.0",
     "tailwind-merge": "^2.3.0",
     "date-fns": "^3.6.0",
     "zod": "^3.23.0"

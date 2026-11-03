@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "ignore": [".next", "node_modules"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/await-await-align": "error",
+    "no-restricted-imports": ["error"]
+  },
+  "settings": {
+    "next": {
+      "rootDir": "src"
+    }
+  }
+}

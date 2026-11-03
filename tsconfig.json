@@ -1,28 +1,33 @@
 {
   "compilerOptions": {
     "target": "ES2024",
-    "lib": ["es2024", "dom", "dom.iterable"],
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "preserveSymlinks": true,
-    "esModuleInterop": true,
-    "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "moduleDetection": "force",
+
+    /* Path resolution */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@lib/*": ["./src/lib/*"],
-      "@types/*": ["./src/types/*"]
-    }
+      "@/*": ["src/*"]
+    },
+
+    /* Strict mode */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitDependencies": true,
+    "outDir": "./.next",
+    "target": "ES2024"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": ["node_modules", ".next"]
+  "include": ["src"],
+  "exclude": [".next"]
 }
