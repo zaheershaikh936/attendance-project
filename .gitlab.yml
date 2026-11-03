@@ -1,0 +1,9 @@
+# GitLab configuration for this project
+# Project URL: https://gitlab.com/<your-org>/attendance-project.git
+
+project_id: attendance-workforce-mgmt
+default_branch: main
+branch protection: enabled
+merge_requests_requires_description: true
+auto_close_merge_requests_on_state: 'closes'
+ci_enabled: true
