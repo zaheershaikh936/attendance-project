@@ -1,7 +1,8 @@
-import type { Config from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['class'],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -60,8 +61,5 @@ export default {
       },
     },
   },
-  plugins: {
-    tailwindcss: {},
-    ...require('tailwindcss-plug'),
-  },
+  plugins: [],
 } satisfies Config;

@@ -1,6 +1,10 @@
-'use client';
+import type { Metadata } from 'next';
+import './globals.css';
 
-import { SessionProvider } from 'next-auth/react';
+export const metadata: Metadata = {
+  title: 'Attendies',
+  description: 'Global Multi-Tenant Workforce Management SaaS',
+};
 
 export default function RootLayout({
   children,
@@ -8,10 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <SessionProvider>
-      <div className="min-h-screen bg-background text-foreground">
+    <html lang="en">
+      <body className="min-h-screen bg-background text-foreground">
         {children}
-      </div>
-    </SessionProvider>
+      </body>
+    </html>
   );
 }
